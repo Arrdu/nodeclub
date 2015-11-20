@@ -15,7 +15,6 @@ var sendMail = function (data) {
   }
   // 遍历邮件数组，发送每一封邮件，如果有发送失败的，就再压入数组，同时触发mailEvent事件
   transporter.sendMail(data, function (err) {
-    console.log("[derek] sendMail ok");
     if (err) {
       // 写为日志
       console.log(err);
