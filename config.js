@@ -117,7 +117,7 @@ var config = {
     ['cardboardsdk', 'Google Cardboard SDK'],
     ['dev', '外围交互设备开发'],
     ['opt', '游戏性能优化'],
-    ['publish', '发布你的VR游戏'],
+    ['publish', 'VR作品'],
   ],
 
   // 极光推送
