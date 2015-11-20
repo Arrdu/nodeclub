@@ -10,9 +10,9 @@ var config = {
 
   get mini_assets() { return !this.debug; }, // 是否启用静态文件的合并压缩，详见视图中的Loader
 
-  name: 'SmartCreate', // 社区名字
-  description: '�ƶ�������ʵϵͳ����������', // 社区的描述
-  keywords: 'Cardboard, Vitual Reality, Cardboard SDK, ��Ϸ����, Unity3d',
+  name: 'SmartCreate-智能创见', // 社区名字
+  description: '移动虚拟现实系统开发者社区', // 社区的描述，
+  keywords: 'Cardboard, Vitual Reality, Cardboard SDK, ԎϷ¿ª·¢, Unity3d',
 
   // 添加到 html head 中的信息
   site_headers: [
