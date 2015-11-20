@@ -53,10 +53,10 @@ var config = {
 
   // RSS配置
   rss: {
-    title: 'CNode：Node.js专业中文社区',
+    title: 'Cardboard 移动虚拟现实系统开发者专业中文社区',
     link: 'http://120.24.81.100:3000',
     language: 'zh-cn',
-    description: 'CNode：Node.js专业中文社区',
+    description: 'Cardboard 移动虚拟现实系统开发者专业中文社区',
     //最多获取的RSS Item数量
     max_rss_items: 50
   },
@@ -67,7 +67,7 @@ var config = {
     port: 25,
     auth: {
       user: 'smartcreate@126.com',
-      pass: 'smartcreatepass'
+      pass: 'smtpass'
     }
   },
 
