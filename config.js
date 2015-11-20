@@ -8,7 +8,7 @@ var config = {
   // debug 为 true 时，用于本地调试
   debug: true,
 
-  get mini_assets() { return true; }, // 是否启用静态文件的合并压缩，详见视图中的Loader
+  //get mini_assets() { return true; }, // 是否启用静态文件的合并压缩，详见视图中的Loader
 
   name: 'SmartCreate-智能创见', // 社区名字
   description: '移动虚拟现实系统开发者社区', // 社区的描述，
