@@ -66,6 +66,7 @@ exports.signup = function (req, res, next) {
         if (err) {
           return next(err);
         }
+
         // 发送激活邮件
         mail.sendActiveMail(email, utility.md5(email + passhash + config.session_secret), loginname);
         res.render('sign/signup', {
