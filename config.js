@@ -114,6 +114,7 @@ var config = {
   tabs: [
     ['DIY', '眼镜盒子制作'],
     ['u3d', 'Unity3d虚拟现实游戏开发'],
+    ['cardboardsdk', 'Google Cardboard SDK'],
     ['dev', '外围交互设备开发'],
     ['opt', '游戏性能优化'],
     ['publish', '发布你的VR游戏'],
