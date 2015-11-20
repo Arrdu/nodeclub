@@ -67,7 +67,7 @@ var config = {
     port: 25,
     auth: {
       user: 'smartcreate@126.com',
-      pass: 'smtpass'
+      pass: 'ksoqpardehvnvykp'
     }
   },
 
