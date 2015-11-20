@@ -66,8 +66,8 @@ var config = {
     host: 'smtp.126.com',
     port: 25,
     auth: {
-      user: 'smartcreate@126.com',
-      pass: 'smtpass'
+      user: 'hdhscu@126.com',
+      pass: '674456'
     }
   },
 
