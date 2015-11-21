@@ -117,6 +117,7 @@ var config = {
     ['cardboardsdk', 'Google Cardboard SDK'],
     ['dev', '外围交互设备开发'],
     ['opt', '游戏性能优化'],
+    ['videomake', 'VR视频制作'],
     ['publish', 'VR作品'],
   ],
 
