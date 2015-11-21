@@ -28,7 +28,7 @@ var config = {
   // cdn host，如 http://cnodejs.qiniudn.com 
   site_static_host: '', // 静态文件存储域名
   // 社区的域名
-  host: '120.24.81.100:3000',
+  host: 'http://www.smartcreate.net',
   // 默认的Google tracker ID，自有站点请修改，申请地址：http://www.google.com/analytics/
   google_tracker_id: '',
   // 默认的cnzz tracker ID，自有站点请修改
@@ -54,7 +54,7 @@ var config = {
   // RSS配置
   rss: {
     title: 'Cardboard 移动虚拟现实系统开发者专业中文社区',
-    link: 'http://120.24.81.100:3000',
+    link: 'http://www.smartcreate.net',
     language: 'zh-cn',
     description: 'Cardboard 移动虚拟现实系统开发者专业中文社区',
     //最多获取的RSS Item数量
