@@ -54,7 +54,7 @@ var config = {
   // RSS配置
   rss: {
     title: 'Cardboard 移动虚拟现实系统开发者专业中文社区',
-    link: 'http://www.smartcreate.net',
+    link: 'www.smartcreate.net',
     language: 'zh-cn',
     description: 'Cardboard 移动虚拟现实系统开发者专业中文社区',
     //最多获取的RSS Item数量
