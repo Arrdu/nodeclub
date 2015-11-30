@@ -114,11 +114,11 @@ var config = {
   tabs: [
     ['DIY', 'Cardboard应用开发基础'],
     ['u3d', 'Cardboard应用设计'],
+    ['opt', 'Cardboard应用性能分析与优化'],
+    ['videomake', 'Cardboard视频制作'],
     ['cardboardsdk', 'CardboardSDK研究'],
     ['dev', 'Cardboard外围'],
-    ['opt', 'Cardboard应用性能分析与优化'],
-    ['videomake', 'Cardboard VR视频'],
-    ['publish', '开发者作品交流'],
+    ['publish', 'Cardboard作品交流'],
   ],
 
   // 极光推送
