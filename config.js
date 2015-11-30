@@ -12,7 +12,7 @@ var config = {
 
   name: 'SmartCreate-智能创见', // 社区名字
   description: '移动虚拟现实系统开发者社区', // 社区的描述，
-  keywords: 'Cardboard, Vitual Reality, Cardboard SDK, ԎϷ¿ª·¢, Unity3d',
+  keywords: 'Cardboard, Vitual Reality, Cardboard SDK, 虚拟现实, Unity3d,VR',
 
   // 添加到 html head 中的信息
   site_headers: [
@@ -28,7 +28,7 @@ var config = {
   // cdn host，如 http://cnodejs.qiniudn.com 
   site_static_host: '', // 静态文件存储域名
   // 社区的域名
-  host: 'http://www.smartcreate.net',
+  host: 'www.smartcreate.net',
   // 默认的Google tracker ID，自有站点请修改，申请地址：http://www.google.com/analytics/
   google_tracker_id: '',
   // 默认的cnzz tracker ID，自有站点请修改
@@ -112,13 +112,13 @@ var config = {
 
   // 版块
   tabs: [
-    ['DIY', '眼镜盒子制作'],
-    ['u3d', 'Unity3d虚拟现实游戏开发'],
-    ['cardboardsdk', 'Google Cardboard SDK'],
-    ['dev', '外围交互设备开发'],
-    ['opt', '游戏性能优化'],
-    ['videomake', 'VR视频制作'],
-    ['publish', 'VR作品'],
+    ['DIY', 'Cardboard应用开发基础'],
+    ['u3d', 'Cardboard应用设计'],
+    ['cardboardsdk', 'CardboardSDK研究'],
+    ['dev', 'Cardboard外围'],
+    ['opt', 'Cardboard应用性能分析与优化'],
+    ['videomake', 'Cardboard VR视频'],
+    ['publish', '开发者作品交流'],
   ],
 
   // 极光推送
