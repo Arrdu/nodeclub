@@ -23,6 +23,7 @@ var config = {
   // 右上角的导航区
   site_navs: [
     // 格式 [ path, title, [target=''] ]
+    [ 'https://github.com/googlesamples/cardboard-unity', 'Cardboard SDK' ]
     [ '/about', '关于' ]
   ],
   // cdn host，如 http://cnodejs.qiniudn.com 
@@ -116,7 +117,7 @@ var config = {
     ['u3d', 'VR应用设计'],
     ['opt', 'VR应用优化'],
     ['videomake', 'VR视频制作'],
-    ['cardboardsdk', 'CardboardSDK'],
+    ['cardboardsdk', 'Cardboard问答'],
     ['dev', 'VR外围设备'],
     ['publish', 'VR作品交流'],
   ],
