@@ -23,14 +23,11 @@
   <% if (config.site_icon) { %>
   <link rel="icon" href="<%- staticFile(config.site_icon) %>" type="image/x-icon"/>
   <% } %>
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css">
   <!-- style -->
   <%- Loader('/public/stylesheets/index.min.css')
-  .css('http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css')
-  .css('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css')
-  .css('http://cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css')
+  .css('/public/libs/bootstrap/css/bootstrap.min.css')
+  .css('/public/libs/bootstrap/css/font-awesome.min.css')
+  .css('/public/libs/bootstrap/css/monokai_sublime.min.css')
   .css('/public/libs/bootstrap/css/screen.css')
   .css('/public/stylesheets/common.css')
   .css('/public/stylesheets/style.less')
