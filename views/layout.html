@@ -170,7 +170,7 @@
                           <% [['all', '全部'], ['good', '精华']].concat(tabs).forEach(function (pair) {
                           var value = pair[0];
                           var text = pair[1]; %>
-                          <li  role="presentation"><a href="<%= value ? '/?tab=' + value : '/' %>" title="<%= text%>"  target="_blank">text</a></li>
+                          <li  role="presentation"><a href="<%= value ? '/?tab=' + value : '/' %>" title="<%= text%>"  target="_blank"><%= text %></a></li>
                           <% }) %>
                         </ul>
                     </div>
