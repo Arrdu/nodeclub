@@ -143,7 +143,7 @@
                     <% } %>
                     <% if (current_user) { %>
                     <a href="/setting" class="btn btn-default btn-doc" target="_blank">设置</a>
-                    <a href="/signout" class="btn btn-default btn-doc" target="_blank">退出</a>
+                    <a href='/signout' data-method="post" rel="nofollow" class="btn btn-default btn-doc" target="_blank">退出</a>
                     <% } else { %>
                     <a href="/signup" class="btn btn-default btn-doc" target="_blank">注册</a>
                     <a href="/signin" class="btn btn-default btn-doc" target="_blank">登录</a>
@@ -166,15 +166,13 @@
                     </div>
                     <div class="collapse navbar-collapse" id="main-menu">
                         <ul class="menu">
-        <li class="nav-current" role="presentation"><a href="/">首页</a></li>
-    <li  role="presentation"><a href="http://lumen.golaravel.com" title="Lumen中文文档"  target="_blank">Lumen</a></li>
-    <li  role="presentation"><a href="http://wenda.golaravel.com" title="Laravel问答社区"  target="_blank">问答社区</a></li>
-    <li  role="presentation"><a href="/laravel/docs/" title="Laravel 中文文档" target="_blank">中文文档</a></li>
-    <li  role="presentation"><a href="/post/laravel-documents-offline-package/" title="下载 Laravel 中文文档离线版">下载离线文档</a></li>
-    <li  role="presentation"><a href="http://www.laravel.com/api/" title="Laravel 框架 API" target="_blank">API</a></li>
-    <li  role="presentation"><a href="http://www.golaravel.com/php/" title="PHP 中文手册" target="_blank">PHP中文手册</a></li>
-    <li  role="presentation"><a href="http://www.phpcomposer.com" title="Composer 中文文档" target="_blank">Composer</a></li>
-</ul>   
+                          <li class="nav-current" role="presentation"><a href="/">首页</a></li>
+                          <% [['all', '全部'], ['good', '精华']].concat(tabs).forEach(function (pair) {
+                          var value = pair[0];
+                          var text = pair[1]; %>
+                          <li  role="presentation"><a href="<%= value ? '/?tab=' + value : '/' %>" title="<%= text%>"  target="_blank">text</a></li>
+                          <% }) %>
+                        </ul>
                     </div>
                 </div>
             </div>
