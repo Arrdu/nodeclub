@@ -26,6 +26,7 @@
   <!-- style -->
   <%- Loader('/public/stylesheets/index.min.css')
   .css('/public/libs/bootstrap/css/bootstrap.css')
+  .css('/public/libs/bootstrap/css/screen.css')
   .css('/public/stylesheets/common.css')
   .css('/public/stylesheets/style.less')
   .css('/public/stylesheets/responsive.css')
@@ -143,6 +144,34 @@
         </div>
     </header>
     <!-- end header -->
+    <!-- start navigation -->
+    <nav class="main-navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="navbar-header">
+                        <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                        </span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="menu">
+        <li class="nav-current" role="presentation"><a href="/">首页</a></li>
+    <li  role="presentation"><a href="http://lumen.golaravel.com" title="Lumen中文文档"  target="_blank">Lumen</a></li>
+    <li  role="presentation"><a href="http://wenda.golaravel.com" title="Laravel问答社区"  target="_blank">问答社区</a></li>
+    <li  role="presentation"><a href="/laravel/docs/" title="Laravel 中文文档" target="_blank">中文文档</a></li>
+    <li  role="presentation"><a href="/post/laravel-documents-offline-package/" title="下载 Laravel 中文文档离线版">下载离线文档</a></li>
+    <li  role="presentation"><a href="http://www.laravel.com/api/" title="Laravel 框架 API" target="_blank">API</a></li>
+    <li  role="presentation"><a href="http://www.golaravel.com/php/" title="PHP 中文手册" target="_blank">PHP中文手册</a></li>
+    <li  role="presentation"><a href="http://www.phpcomposer.com" title="Composer 中文文档" target="_blank">Composer</a></li>
+</ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
 
 <div id='main'>
   <%- body %>
