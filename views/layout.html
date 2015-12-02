@@ -3,6 +3,7 @@
 <head>
   <!-- meta -->
   <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name='description' content='<%= config.description %>'>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="keywords" content="<%= config.keywords %>"/>
@@ -28,12 +29,12 @@
   <!-- style -->
   <%- Loader('/public/stylesheets/index.min.css')
   .css('http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css')
+  .css('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css')
+  .css('http://cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css')
   .css('/public/libs/bootstrap/css/screen.css')
   .css('/public/stylesheets/common.css')
   .css('/public/stylesheets/style.less')
   .css('/public/stylesheets/responsive.css')
-  .css('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css')
-  .css('http://cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css')
   .css('/public/stylesheets/jquery.atwho.css')
   .css('/public/libs/editor/editor.css')
   .css('/public/libs/webuploader/webuploader.css')
