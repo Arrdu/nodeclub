@@ -112,13 +112,13 @@ var config = {
 
   // 版块
   tabs: [
-    ['DIY', 'Cardboard应用开发基础'],
-    ['u3d', 'Cardboard应用设计'],
-    ['opt', 'Cardboard应用性能分析与优化'],
-    ['videomake', 'Cardboard视频制作'],
-    ['cardboardsdk', 'CardboardSDK研究'],
-    ['dev', 'Cardboard外围'],
-    ['publish', 'Cardboard作品交流'],
+    ['DIY', 'VR开发基础'],
+    ['u3d', 'VR应用设计'],
+    ['opt', 'VR应用优化'],
+    ['videomake', 'VR视频制作'],
+    ['cardboardsdk', 'CardboardSDK'],
+    ['dev', 'VR外围设备'],
+    ['publish', 'VR作品交流'],
   ],
 
   // 极光推送
