@@ -168,7 +168,7 @@
                     <div class="collapse navbar-collapse" id="main-menu">
                         <ul class="menu">
                           <li class="nav-current" role="presentation"><a href="/">首页</a></li>
-                          <% [['all', '全部'], ['good', '精华']].concat(config.tabs).forEach(function (pair) {
+                          <% config.tabs.forEach(function (pair) {
                           var value = pair[0];
                           var text = pair[1]; %>
                           <li  role="presentation"><a href="<%= value ? '/?tab=' + value : '/' %>" title="<%= text%>"  target="_blank"><%= text %></a></li>
