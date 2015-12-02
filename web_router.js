@@ -21,7 +21,6 @@ var auth = require('./middlewares/auth');
 var limit = require('./middlewares/limit');
 var github = require('./controllers/github');
 var search = require('./controllers/search');
-var home = require('./controllers/home');
 var passport = require('passport');
 var configMiddleware = require('./middlewares/conf');
 var config = require('./config');
