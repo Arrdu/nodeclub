@@ -23,7 +23,7 @@ var config = {
   // 右上角的导航区
   site_navs: [
     // 格式 [ path, title, [target=''] ]
-    [ 'https://github.com/googlesamples/cardboard-unity', 'Cardboard SDK' ]
+    [ 'https://github.com/googlesamples/cardboard-unity', 'Cardboard SDK' ],
     [ '/about', '关于' ]
   ],
   // cdn host，如 http://cnodejs.qiniudn.com 
