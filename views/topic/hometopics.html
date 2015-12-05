@@ -17,14 +17,14 @@
 </nav>
 -->
 
-<div class='pagination' current_page='<%= current_page %>'>
-  <ul>
+<nav class='pagination' role="navigation" current_page='<%= current_page %>'>
+  <ul class="list-inline">
     <% var base_url = base + (base.indexOf('?') < 0 ? '?' : '&')
       + 'tab=' + (typeof tab !== 'undefined' ? tab : '') + '&page='; %>
     <% if (current_page == 1) { %>
-    <li class='disabled'><a>芦</a></li>
+    <li class='disabled'><a><i class="fa fa-angle-left"></i></a></li>
     <% } else { %>
-    <li><a href="<%= base_url %>1">芦</a></li>
+    <li><a href="<%= base_url %>1"><i class="fa fa-angle-left"></i></a></li>
     <% } %>
 
     <%
@@ -38,9 +38,9 @@
 
     <% for(var i = page_start; i <= page_end; i++) { %>
     <% if (i === current_page) { %>
-    <li class='disabled'><a><%= i %></a></li>
+    <li class='disabled'><a><span class="page-number"><%= i %></span></a></li>
     <% } else { %>
-    <li><a href='<%= base_url + i %>'><%= i %></a></li>
+    <li><a href='<%= base_url + i %>'><span class="page-number"><%= i %></span></a></li>
     <% } %>
     <% } %>
 
@@ -49,28 +49,12 @@
     <% } %>
 
     <% if (current_page == pages) { %>
-    <li class='disabled'><a>禄</a></li>
+    <li class='disabled'><a><i class="fa fa-angle-right"></i></a></li>
     <% } else { %>
-    <li><a href='<%= base_url + pages %>'>禄</a></li>
+    <li><a href='<%= base_url + pages %>'><i class="fa fa-angle-right"></i></a></li>
     <% } %>
   </ul>
-</div>
-<script>
-  $(document).ready(function () {
-    var $nav = $('.pagination');
-    var current_page = $nav.attr('current_page');
-    if (current_page) {
-      $nav.find('li').each(function () {
-        var $li = $(this);
-        var $a = $li.find('a');
-        if ($a.html() == current_page) {
-          $li.addClass('active');
-          $a.removeAttr('href');
-        }
-      });
-    }
-  });
-</script>
+</nav>
 
                 </main>
 
