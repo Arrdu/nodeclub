@@ -10,11 +10,67 @@
   <%- partial('../topic/hometopic', {collection:topics, as:'topic'}) %>
 </div>
 
+<!--
 <nav class="pagination" role="navigation">
     <span class="page-number">第 1 页 &frasl; 共 4 页</span>
         <a class="older-posts" href="/page/2/"><i class="fa fa-angle-right"></i></a>
 </nav>
+-->
 
+<div class='pagination' current_page='<%= current_page %>'>
+  <ul>
+    <% var base_url = base + (base.indexOf('?') < 0 ? '?' : '&')
+      + 'tab=' + (typeof tab !== 'undefined' ? tab : '') + '&page='; %>
+    <% if (current_page == 1) { %>
+    <li class='disabled'><a>芦</a></li>
+    <% } else { %>
+    <li><a href="<%= base_url %>1">芦</a></li>
+    <% } %>
+
+    <%
+    var page_start = current_page - 2 > 0 ? current_page - 2 : 1;
+    var page_end = page_start + 4 >= pages ? pages : page_start + 4;
+    %>
+
+    <% if (page_start > 1) { %>
+    <li><a>...</a></li>
+    <% } %>
+
+    <% for(var i = page_start; i <= page_end; i++) { %>
+    <% if (i === current_page) { %>
+    <li class='disabled'><a><%= i %></a></li>
+    <% } else { %>
+    <li><a href='<%= base_url + i %>'><%= i %></a></li>
+    <% } %>
+    <% } %>
+
+    <% if (page_end < pages ) { %>
+    <li><a>...</a></li>
+    <% } %>
+
+    <% if (current_page == pages) { %>
+    <li class='disabled'><a>禄</a></li>
+    <% } else { %>
+    <li><a href='<%= base_url + pages %>'>禄</a></li>
+    <% } %>
+  </ul>
+</div>
+<script>
+  $(document).ready(function () {
+    var $nav = $('.pagination');
+    var current_page = $nav.attr('current_page');
+    if (current_page) {
+      $nav.find('li').each(function () {
+        var $li = $(this);
+        var $a = $li.find('a');
+        if ($a.html() == current_page) {
+          $li.addClass('active');
+          $a.removeAttr('href');
+        }
+      });
+    }
+  });
+</script>
 
                 </main>
 
@@ -26,17 +82,17 @@
 <div class="widget">
 	<h4 class="title">社区</h4>
 	<div class="content community">
-		<p>QQ群：462694081</p>
-		<p><a href="http://wenda.golaravel.com/" title="Laravel中文网问答社区" target="_blank" onclick="_hmt.push(['_trackEvent', 'big-button', 'click', '问答社区'])"><i class="fa fa-comments"></i> 问答社区</a></p>
+		<p>QQ群：335755460</p>
+		<p><a href="/" title="智能创见问答社区" target="_blank" onclick="_hmt.push(['_trackEvent', 'big-button', 'click', '问答社区'])"><i class="fa fa-comments"></i> 问答社区</a></p>
 	</div>
 </div>
 <!-- end tag cloud widget -->	
 
 <!-- start widget -->
 <div class="widget">
-	<h4 class="title">下载</h4>
+	<h4 class="title">下载客户端</h4>
 	<div class="content download">
-		<a href="/download/" class="btn btn-default btn-block" onclick="_hmt.push(['_trackEvent', 'big-button', 'click', '下载 Laravel & Lumen'])">Laravel &amp; Lumen 一键安装包下载</a>
+		<a href="/download/" class="btn btn-default btn-block" onclick="_hmt.push(['_trackEvent', 'big-button', 'click', '下载Android/iOS客户端'])">下载Android/iOS客户端</a>
 	</div>
 </div>
 <!-- end widget -->	
