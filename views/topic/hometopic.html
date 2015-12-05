@@ -11,7 +11,7 @@
         <%
         var picStart = topic.content.indexOf("![image]");
         var picEnd = (topic.content + picStart).indexOf(")");
-        var imgaddr = topic.content.substr(picStart+7, picEnd-1);
+        var imgaddr = topic.content.substr(picStart+8, picEnd-2);
         console.log('start is ' + picStart);
         console.log('end is ' + picEnd);
         console.log('imgaddr is ' + imgaddr);
