@@ -11,12 +11,12 @@
         <%
         var picStart = topic.content.indexOf("![image]");
         var picEnd = (topic.content + picStart).indexOf(")");
-        var imgaddr = topic.content.substr(picStart, picEnd);
+        var imgaddr = topic.content.substr(picStart+7, picEnd-1);
         console.log('start is ' + picStart);
         console.log('end is ' + picEnd);
         console.log('imgaddr is ' + imgaddr);
         %>
-        <a href="/topic/<%= topic._id %>"><img src="http://image.golaravel.com/c/c2/5accd20e8709a08fd6ae3de9806a9.jpg" alt="<%= topic.title %>"></a>
+        <a href="/topic/<%= topic._id %>"><img src="<%=imgaddr%>" alt="<%= topic.title %>"></a>
     </div>
     <div class="post-content">
         <p>本教程示例代码见：https://github.com/johnlui/Learn-Laravel-5      大家在任何地方卡住，最快捷的解决方式就是去看我的示例代码。 本文是本系列教程的完结篇，我们将一起给 Page 加入评论功能，让游客在前台页面可以查看、提交、回复评论，同时我们将在后台完善评论管理功能，</p>
