@@ -6,7 +6,7 @@ var path = require('path');
 
 var config = {
   // debug 为 true 时，用于本地调试
-  debug: false,
+  debug: true,
 
   get mini_assets() { return !this.debug; }, // 是否启用静态文件的合并压缩，详见视图中的Loader
 
@@ -113,11 +113,12 @@ var config = {
 
   // 版块
   tabs: [
+    ['homepage','首页'],
     ['DIY', 'VR开发基础'],
     ['u3d', 'VR应用设计'],
     ['opt', 'VR应用优化'],
     ['videomake', 'VR视频制作'],
-    ['cardboardsdk', 'Cardboard问答'],
+    ['cardboardsdk', 'CardboardSDK问答'],
     ['dev', 'VR外围设备'],
     ['publish', 'VR作品交流'],
   ],

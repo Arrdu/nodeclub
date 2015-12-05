@@ -26,10 +26,24 @@ exports.index = function (req, res, next) {
   var proxy = new eventproxy();
   proxy.fail(next);
 
+  var tabName = renderHelper.tabName(tab);
+
+  var isHomepage = false;
+  
+  if(tabName == "首页"){
+    isHomepage = true;
+  }
+  else if(typeof(tabName) == 'undefined'){
+    isHomepage = true;
+  }
+  else{
+    isHomepage = false;
+  }
+
   // 取主题
   var query = {};
-  if (tab && tab !== 'all') {
-    if (tab === 'good') {
+  if (tab) {
+    if (isHomepage == true) {
       query.good = true;
     } else {
       query.tab = tab;
@@ -91,7 +105,6 @@ exports.index = function (req, res, next) {
   }));
   // END 取分页数据
 
-  var tabName = renderHelper.tabName(tab);
   proxy.all('topics', 'tops', 'no_reply_topics', 'pages',
     function (topics, tops, no_reply_topics, pages) {
       res.render('index', {
@@ -103,7 +116,8 @@ exports.index = function (req, res, next) {
         pages: pages,
         tabs: config.tabs,
         tab: tab,
-        pageTitle: tabName && (tabName + '版块'),
+        pageTitle: tabName,
+        isHomepage: isHomepage,
       });
     });
 };
