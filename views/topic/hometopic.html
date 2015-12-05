@@ -12,13 +12,15 @@
         var picStart = topic.content.indexOf("![image]") + 9;
         var temp = topic.content.substr(picStart,200);
         var imgaddr = temp.substr(0, temp.indexOf(")"));
-        console.log('start is ' + picStart);
-        console.log('imgaddr is ' + imgaddr);
         %>
-        <a href="/topic/<%= topic._id %>"><img src="<%=imgaddr%>" alt="<%= topic.title %>"></a>
+        <a href="/topic/<%= topic._id %>"><img style="height:100px;" src="<%=imgaddr%>" alt="<%= topic.title %>"></a>
     </div>
     <div class="post-content">
-        <p>本教程示例代码见：https://github.com/johnlui/Learn-Laravel-5      大家在任何地方卡住，最快捷的解决方式就是去看我的示例代码。 本文是本系列教程的完结篇，我们将一起给 Page 加入评论功能，让游客在前台页面可以查看、提交、回复评论，同时我们将在后台完善评论管理功能，</p>
+        <%
+        var briefstr = topic.content.substr(0, 200);
+        console.log('briefstr is ' + briefstr);
+        %>
+        <p><%=briefstr%></p>
     </div>
     <div class="post-permalink">
         <a href="/topic/<%= topic._id %>" class="btn btn-default">阅读全文</a>
