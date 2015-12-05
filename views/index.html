@@ -1,5 +1,7 @@
-<%- partial('sidebar') %>
 
+<% if ( isHomepage == false ) {%>
+<%- partial('sidebar') %>
+<%}%>
 <div id="content">
   <div class="panel">
     <% if (typeof(topics) !== 'undefined' && topics.length > 0) { %>
