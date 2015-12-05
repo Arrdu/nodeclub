@@ -13,7 +13,7 @@
         var temp = topic.content.substr(picStart,200);
         var imgaddr = temp.substr(0, temp.indexOf(")"));
         %>
-        <a href="/topic/<%= topic._id %>"><img style="height:100px;" src="<%=imgaddr%>" alt="<%= topic.title %>"></a>
+        <a href="/topic/<%= topic._id %>"><img style="max-height:150px;" src="<%=imgaddr%>" alt="<%= topic.title %>"></a>
     </div>
     <div class="post-content">
         <%
@@ -29,7 +29,7 @@
     <footer class="post-footer clearfix">
         <div class="pull-left tag-list">
             <i class="fa fa-folder-open-o"></i>
-            <a href="/tag/laravel/">Laravel</a>, <a href="/tag/getting-started-with-laravel/">Laravel入门教程</a>, <a href="/tag/laravle5/">laravle5</a>
+            <a href="/?tab=cardboardsdk">Cardboard SDK</a>, <a href="/?tab=DIY">开发基础交流</a>
         </div>
         <div class="pull-right share">
         </div>
