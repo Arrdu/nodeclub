@@ -1,7 +1,6 @@
 
 <% if ( isHomepage == true ) {%>
-<div id="content">
-  <div class="panel">
+
     <% if (typeof(topics) !== 'undefined' && topics.length > 0) { %>
       <%- partial('topic/hometopics', {
       topics: topics,
@@ -14,8 +13,6 @@
       <p>无话题</p>
     </div>
     <% } %>
-  </div>
-</div>
 
 <%}else{%>
 <%- partial('sidebar') %>
