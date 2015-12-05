@@ -1,3 +1,8 @@
+<%if (isHomepage == true){%>
+
+<>
+
+<%}else{%>
 <div class='cell'>
 
   <a class="user_avatar pull-left" href="/user/<%= topic.author.loginname %>">
@@ -37,3 +42,4 @@
     </a>
   </div>
 </div>
+<%}%>
