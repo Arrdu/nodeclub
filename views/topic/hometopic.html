@@ -13,7 +13,7 @@
         var temp = topic.content.substr(picStart,200);
         var imgaddr = temp.substr(0, temp.indexOf(")"));
         %>
-        <a href="/topic/<%= topic._id %>"><img style="max-height:100px;overflow:hidden;" src="<%=imgaddr%>" alt="<%= topic.title %>"></a>
+        <a href="/topic/<%= topic._id %>"><img style="max-width:630px;myimg:expression_r(onload=function(){this.style.width=(this.offsetWidth > 630)?"630px":"auto"});" src="<%=imgaddr%>" alt="<%= topic.title %>"></a>
     </div>
     <div class="post-content">
         <%
