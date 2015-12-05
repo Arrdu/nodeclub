@@ -1,20 +1,20 @@
 <article id=41 class="post tag-laravel tag-getting-started-with-laravel tag-laravle5">
 
     <div class="post-head">
-        <h1 class="post-title"><a href="/post/laravel-5-getting-started-part-4/">Laravel 5 系列入门教程（四）【完结】</a></h1>
+        <h1 class="post-title"><a href="/topic/<%= topic._id %>"><%= topic.title %></a></h1>
         <div class="post-meta">
-            <span class="author">作者：<a href="/author/johnlui/">JohnLui</a></span> &bull;
-            <time class="post-date" datetime="2015年3月11日星期三晚上8点57" title="2015年3月11日星期三晚上8点57">2015年3月11日</time>
+            <span class="author">作者：<a href="/user/<%= topic.author.loginname %>"><%= topic.author.loginname %></a></span> &bull;
+            <time class="post-date" datetime="<%= topic.create_at_ago() %>" title="<%= topic.create_at_ago() %>"><%= topic.create_at_ago() %></time>
         </div>
     </div>
     <div class="featured-media">
-        <a href="/post/laravel-5-getting-started-part-4/"><img src="http://image.golaravel.com/c/c2/5accd20e8709a08fd6ae3de9806a9.jpg" alt="Laravel 5 系列入门教程（四）【完结】"></a>
+        <a href="/topic/<%= topic._id %>"><img src="http://image.golaravel.com/c/c2/5accd20e8709a08fd6ae3de9806a9.jpg" alt="<%= topic.title %>"></a>
     </div>
     <div class="post-content">
         <p>本教程示例代码见：https://github.com/johnlui/Learn-Laravel-5      大家在任何地方卡住，最快捷的解决方式就是去看我的示例代码。 本文是本系列教程的完结篇，我们将一起给 Page 加入评论功能，让游客在前台页面可以查看、提交、回复评论，同时我们将在后台完善评论管理功能，</p>
     </div>
     <div class="post-permalink">
-        <a href="/post/laravel-5-getting-started-part-4/" class="btn btn-default">阅读全文</a>
+        <a href="/topic/<%= topic._id %>" class="btn btn-default">阅读全文</a>
     </div>
 
     <footer class="post-footer clearfix">
