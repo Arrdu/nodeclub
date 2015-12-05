@@ -8,6 +8,14 @@
         </div>
     </div>
     <div class="featured-media">
+        <%
+        var picStart = topic.content.indexOf("![image]");
+        var picEnd = (topic.content + picStart).indexOf(")");
+        var imgaddr = str.substr(picStart, picEnd);
+        console.log('start is ' + picStart);
+        console.log('end is ' + picEnd);
+        console.log('imgaddr is ' + imgaddr);
+        %>
         <a href="/topic/<%= topic._id %>"><img src="http://image.golaravel.com/c/c2/5accd20e8709a08fd6ae3de9806a9.jpg" alt="<%= topic.title %>"></a>
     </div>
     <div class="post-content">
