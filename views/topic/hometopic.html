@@ -9,11 +9,10 @@
     </div>
     <div class="featured-media">
         <%
-        var picStart = topic.content.indexOf("![image]");
-        var picEnd = (topic.content + picStart).indexOf(")");
-        var imgaddr = topic.content.substr(picStart+9, picEnd-4);
+        var picStart = topic.content.indexOf("![image]") + 9;
+        var temp = topic.content.substr(picStart,200);
+        var imgaddr = temp.substr(0, temp.indexOf(")"));
         console.log('start is ' + picStart);
-        console.log('end is ' + picEnd);
         console.log('imgaddr is ' + imgaddr);
         %>
         <a href="/topic/<%= topic._id %>"><img src="<%=imgaddr%>" alt="<%= topic.title %>"></a>
