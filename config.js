@@ -23,8 +23,8 @@ var config = {
   // 右上角的导航区
   site_navs: [
     // 格式 [ path, title, [target=''] ]
-    [ 'https://github.com/googlesamples/cardboard-unity', 'Cardboard SDK' ],
-    [ '/about', '关于' ]
+    [ '/about', '关于' ],
+    [ 'http://www.smartcreate.net/topic/566423ca44c8ee36696e889e', '社区文化' ],
   ],
   // cdn host，如 http://cnodejs.qiniudn.com 
   site_static_host: '', // 静态文件存储域名
