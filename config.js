@@ -83,7 +83,7 @@ var config = {
   GITHUB_OAUTH: {
     clientID: '3246b5ce4ec39174c681',
     clientSecret: '0fc730cf310a5a9d0451e135d1598cdd6146616b',
-    callbackURL: 'http://www.smartcreat.net/auth/github/callback'
+    callbackURL: 'http://www.smartcreate.net/auth/github/callback'
   },
   // 是否允许直接注册（否则只能走 github 的方式）
   allow_sign_up: true,
