@@ -77,7 +77,7 @@ var config = {
   weibo_id: 'your_weibo_id',
 
   // admin 可删除话题，编辑标签，设某人为达人
-  admins: { user_login_name: derekhu },
+  admins: { user_login_name: 'derekhu' },
 
   // github 登陆的配置
   GITHUB_OAUTH: {
