@@ -118,9 +118,9 @@ var config = {
     ['u3d', 'VR应用设计'],
     ['opt', 'VR应用优化'],
     ['videomake', 'VR视频制作'],
-    ['cardboardsdk', 'CardboardSDK问答'],
     ['dev', 'VR外围设备'],
     ['publish', 'VR作品交流'],
+    ['cardboardsdk', 'CardboardSDK问答'],
   ],
 
   // 极光推送
