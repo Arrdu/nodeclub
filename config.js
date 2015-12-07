@@ -23,7 +23,7 @@ var config = {
   // 右上角的导航区
   site_navs: [
     // 格式 [ path, title, [target=''] ]
-    [ '/about', '关于' ],
+    [ '/about', '加入我们' ],
     [ 'http://www.smartcreate.net/topic/566423ca44c8ee36696e889e', '社区文化' ],
   ],
   // cdn host，如 http://cnodejs.qiniudn.com 
@@ -108,7 +108,7 @@ var config = {
   // 注：如果填写 qn_access，则会上传到 7牛，以下配置无效
   upload: {
     path: path.join(__dirname, 'public/upload/'),
-    url: '/public/upload/'
+    url: '/public/upload/'  
   },
 
   // 版块
